@@ -18,4 +18,4 @@ include_directories(${SDL2_MIXER_INCLUDE_DIRS})
 add_executable(${EXECUTABLE_NAME} sound.c)
 
 # Link SDL2 and SDL2_mixer libraries to the executable
-target_link_libraries(${EXECUTABLE_NAME} ${SDL2_LIBRARIES} ${SDL2_MIXER_LIBRARIES})
+target_link_libraries(${EXECUTABLE_NAME} ${SDL2_LIBRARIES} ${SDL2_MIXER_LIBRARIES} m )
