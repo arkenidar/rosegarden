@@ -1,7 +1,19 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/msys64/mingw64/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "c:/msys64/mingw64/bin/gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        },
+        {
+            "name": "Debian12",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
@@ -12,7 +24,7 @@
             "intelliSenseMode": "linux-gcc-x64"
         },
         {
-            "name": "Win32",
+            "name": "Windows11",
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:/msys64/mingw64/include/**"
