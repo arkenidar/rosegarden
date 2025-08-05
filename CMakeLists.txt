@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(MyProject)
+project(RoseGardenSoundProject)
 
 # Debug configuration
 if(NOT CMAKE_BUILD_TYPE)
