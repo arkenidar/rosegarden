@@ -289,7 +289,7 @@ int main(int argc, char *argv[])
     // Suppress unused parameter warnings
     (void)argc;
     (void)argv;
-    
+
     DEBUG_LOG("Starting SDL3 Audio Synthesizer with automatic debugging");
     DEBUG_LOG("Debug mode: %s", DEBUG_ENABLED ? "ENABLED" : "DISABLED");
     DEBUG_LOG("Audio debugging: %s", DEBUG_AUDIO_DETAILED ? "VERBOSE" : "BASIC");
@@ -465,7 +465,8 @@ int main(int argc, char *argv[])
         // Rendering
         Uint64 render_start = SDL_GetPerformanceCounter();
 
-        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+        Uint8 grey_scale = 200; // Background color : grey scale value 0 is black, 255 is white
+        SDL_SetRenderDrawColor(renderer, grey_scale, grey_scale, grey_scale, SDL_ALPHA_OPAQUE);
         SDL_RenderClear(renderer);
 
         if (note_on)
